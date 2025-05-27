@@ -1,6 +1,6 @@
-from author_dashboard.data import seed_data
-from author_dashboard.models.article import Article
-from author_dashboard.models.author import Author
+from lib.db.seed import seed_data
+
+
 
 def display_author_profile(author):
     print(f"Author: {author.name}")

@@ -1,13 +1,10 @@
-# test_author_article.py
 
 import pytest
 
-# Mock Magazine class
 class Magazine:
     def __init__(self, name):
         self.name = name
 
-# Actual classes
 class Author:
     def __init__(self, name):
         self.name = name
@@ -26,7 +23,7 @@ class Article:
         self.author = author
         author.add_article(self)
 
-# Pytest test cases
+
 
 def test_article_initialization_adds_to_author():
     author = Author("Jane")

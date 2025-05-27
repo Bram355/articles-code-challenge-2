@@ -1,8 +1,8 @@
-# test_author.py
+
 
 import pytest
 
-# Mock classes to support Author tests
+
 class Magazine:
     def __init__(self, name):
         self.name = name
@@ -12,7 +12,6 @@ class Article:
         self.title = title
         self.magazine = magazine
 
-# Your actual Author class
 class Author:
     def __init__(self, name):
         self.name = name
@@ -24,7 +23,7 @@ class Author:
     def magazines(self):
         return list({article.magazine for article in self.articles})
 
-# Test cases
+
 def test_author_initialization():
     author = Author("Alice")
     assert author.name == "Alice"
