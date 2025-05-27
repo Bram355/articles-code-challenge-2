@@ -4,7 +4,8 @@ from author_dashboard.models.author import Author
 
 def display_author_profile(author):
     print(f"Author: {author.name}")
-    # Add more details here if needed
+    
+    
 
 def main():
     author, magazines = seed_data()
